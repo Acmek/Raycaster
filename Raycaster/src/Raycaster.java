@@ -119,7 +119,7 @@ public class Raycaster extends Canvas implements KeyListener, Runnable {
         hres = 80; //Sky and Ground Height Resolution (Should Be Height / 4)
         text = new ArrayList<Integer>();
         try {
-            Scanner file = new Scanner(new File("C:/Users/Kevin/Desktop/Projects/Raycaster/src/Textures.ppm")); //Import Texture File
+            Scanner file = new Scanner(new File("Textures.ppm Directory")); //Import Texture File
             while(file.hasNext()) { //Grabs Texture RGB
                 text.add(file.nextInt());
             }
@@ -129,7 +129,7 @@ public class Raycaster extends Canvas implements KeyListener, Runnable {
             }
 
             text.clear();
-            file = new Scanner(new File("C:/Users/Kevin/Desktop/Projects/Raycaster/src/3.2_Sky.ppm"));
+            file = new Scanner(new File("3.2_Sky.ppm Directory"));
             while(file.hasNext()) { //Grabs Sky RGB
                 text.add(file.nextInt());
             }
@@ -139,7 +139,7 @@ public class Raycaster extends Canvas implements KeyListener, Runnable {
             }
 
             text.clear();
-            file = new Scanner(new File("C:/Users/Kevin/Desktop/Projects/Raycaster/src/3.2_Ground.ppm"));
+            file = new Scanner(new File("3.2_Ground.ppm Directory"));
             while(file.hasNext()) { //Grabs Ground RGB
                 text.add(file.nextInt());
             }
@@ -149,7 +149,7 @@ public class Raycaster extends Canvas implements KeyListener, Runnable {
             }
 
             text.clear();
-            file = new Scanner(new File("C:/Users/Kevin/Desktop/Projects/Raycaster/src/Sprites.ppm"));
+            file = new Scanner(new File("Sprites.ppm Directory"));
             while(file.hasNext()) { //Grabs Sprites RGB
                 text.add(file.nextInt());
             }
